@@ -1,4 +1,7 @@
-#body {
-    background-color: blue;
-    width: 1200PX;
+body{
+    background: rgb(0,10,41);
+    background: linear-gradient(313deg, rgba(0,10,41,1) 0%, rgba(255,120,0,1) 100%);
+}  
+ul {
+    list-style-type: none;
 }
