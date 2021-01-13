@@ -1,39 +1,43 @@
 header{
-    /* background-color: #ff7800; */
-    padding: 20px;
     text-align: left;
     color: #edf7fd;
     font-family: 'Open Sans', sans-serif;
+   
 }
 
 body{
-    background-image: linear-gradient(to right bottom, #000a29, #3f1b4c, #881c54, #c43440, #e06d06);        
-    font-family: 'Roboto', sans-serif;
+    background: rgb(0,10,41);
+    background: linear-gradient(135deg, rgba(0,10,41,1) 9%, rgba(136,28,84,1) 38%, rgba(196,52,64,1) 70%, rgba(255,120,0,1) 97%);    font-family: 'Roboto', sans-serif;
+    /* height: 100vh; */
+    margin: auto;
+} 
+#wrapper {
     width: 1200px;
-    margin: auto
-;} 
-
+    margin: auto;
+    min-height: 1200px;
+}
 h1 , h2 {
-    /* font-family: 'Bodoni Moda', serif; */
     color: #edf7fd;
-
+}
+li{
+    padding: 5px;
 }
 ul {
     list-style-type: none;
+    padding: 0px;
 }
-li{
-    /* padding: 10px; */
-    /* text-align: left; */
+a{
+    text-decoration: none;
+    color: white;
 }
 main{
     display: flex;
 }
 section{
-    padding: 20px;
+    /* padding: 10px; */
     flex: auto;
 }
 footer{
-    /* background-color: #000a29; */
     padding: 20px;
     color: #edf7fd;
     text-align: left;
