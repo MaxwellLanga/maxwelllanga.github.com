@@ -1,27 +1,40 @@
 header{
-    background-color: #ff7800;
+    /* background-color: #ff7800; */
     padding: 20px;
-    text-align: center;
-    color: #000a29;
+    text-align: left;
+    color: #edf7fd;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
-    background: rgb(0,10,41);
-    background: linear-gradient(313deg, rgba(0,10,41,1) 11%, rgba(255,120,0,1) 100%);          
+    background-image: linear-gradient(to right bottom, #000a29, #3f1b4c, #881c54, #c43440, #e06d06);        
     font-family: 'Roboto', sans-serif;
     width: 1200px;
     margin: auto
 ;} 
 
 h1 , h2 {
-    font-family: 'Bodoni Moda', serif;
+    /* font-family: 'Bodoni Moda', serif; */
+    color: #edf7fd;
+
 }
 ul {
     list-style-type: none;
 }
-footer{
-    background-color: #000a29;
+li{
+    /* padding: 10px; */
+    /* text-align: left; */
+}
+main{
+    display: flex;
+}
+section{
     padding: 20px;
-    text-align: center;
-
+    flex: auto;
+}
+footer{
+    /* background-color: #000a29; */
+    padding: 20px;
+    color: #edf7fd;
+    text-align: left;
 }
