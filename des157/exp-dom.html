@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments with dom</title>
+</head>
+<body>
+    <h1>Experiments with DOM</h1>
+
+    <p>The sum of <span id="1stNum">___</span> and <span id="2ndNum">___</span> is <span id="total">___</span></p>
+    <p>When you multiply <span id="mul1">___</span> and <span id="mul2">___</span>, you get <span id="mulTotal">___</span></p>
+    <script>
+
+        var int1 = prompt("Enter a number:", "");
+        var int2 = prompt('Enter a second number:');
+        var intTotal = parseInt (int1) + parseInt(int2);
+        var intMul = parseInt(intTotal) * parseInt(int2);
+
+        function add(){
+            
+            document.getElementById('1stNum').textContent = int1;
+            document.getElementById('2ndNum').innerText = int2;
+            document.getElementById('total').innerHTML = intTotal;
+
+        }
+
+        function multiply(){
+
+
+            document.getElementById('mul1').textContent = intTotal;
+            document.getElementById('mul2').innerHTML = int2;
+            document.getElementById('mulTotal').innerHTML= intMul;
+
+
+        }
+
+
+        add();
+        multiply();
+  
+       
+    </script>
+</body>
+</html>
