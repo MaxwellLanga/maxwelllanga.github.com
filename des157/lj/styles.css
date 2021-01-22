@@ -1,0 +1,52 @@
+
+header{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+h1 , h2 {
+    font-family: 'Roboto', sans-serif;
+    color:  #c5d4ff;
+}
+
+.titles{
+    font-size: 35px;
+}
+body{
+    background: rgb(0,10,41);
+    background: linear-gradient(135deg, rgba(0,10,41,1) 9%, rgba(136,28,84,1) 38%, rgba(196,52,64,1) 70%, rgba(255,120,0,1) 97%);   
+    font-family: 'Open Sans', sans-serif; 
+    margin: auto;
+    height: 100em;
+} 
+footer{
+    color: #edf7fd;
+    padding-top: 100px;
+
+}
+#wrapper{
+    width: 700px;
+    margin: auto;
+}
+#article1 p{
+    font-size: 20px;
+    color: #edf7fd;
+    line-height: 1.6;
+
+}
+.date{
+    color:  #c5d4ff;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color:  #c5d4ff;
+
+}
+a:hover{
+    color:  #7499fd;
+
+}
