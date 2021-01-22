@@ -1,6 +1,6 @@
 header{
     text-align: left;
-    color: #edf7fd;
+    color:  #c5d4ff;
     padding-top: 25px;
 }
 
@@ -17,7 +17,8 @@ body{
 }
 h1 , h2 {
     font-family: 'Roboto', sans-serif;
-    color: #edf7fd;
+    color:  #c5d4ff;
+
 }
 li{
     padding: 5px;
@@ -30,8 +31,11 @@ ul {
 }
 a{
     text-decoration: none;
-    color:  #c5d4ff;
+    color: #edf7fd;
 
+}
+a:hover{
+    color:  #7499fd;
 
 }
 main{
@@ -43,13 +47,18 @@ section{
     padding-top: 50px;
 }
 footer{
-    color: #edf7fd;
+    color:  #c5d4ff;
     text-align: left;
     position: fixed;
     bottom: 0;
 }
 #email, #html {
-    color:  #c5d4ff;
+    color: #edf7fd;
+
+}
+#email:hover, #html:hover{
+    color:  #7499fd;
+
 }
 
 #banner{
