@@ -1,5 +1,5 @@
 header{
-    text-align: left;
+    text-align: center;
     color:  #c5d4ff;
     padding-top: 25px;
 }
@@ -14,11 +14,13 @@ body{
 #wrapper {
     width: 1000px;
     margin: auto;
+    position: relative;
 }
+
+
 h1 , h2 {
     font-family: 'Roboto', sans-serif;
     color:  #c5d4ff;
-
 }
 li{
     padding: 5px;
@@ -43,14 +45,20 @@ main{
 }
 section{
     flex: content;
-    width: 400px;
+    width: 300px;
     padding-top: 50px;
+    /* margin: auto; */
 }
 footer{
     color:  #c5d4ff;
-    text-align: left;
+    text-align: center;
+    width: 100%;
     position: fixed;
+    left: 0;
     bottom: 0;
+    background: rgb(0,10,41);
+    background: linear-gradient(135deg, rgba(0,10,41,1) 9%, rgba(136,28,84,1) 38%, rgba(196,52,64,1) 70%, rgba(255,120,0,1) 97%); 
+
 }
 #email, #html {
     color: #edf7fd;
