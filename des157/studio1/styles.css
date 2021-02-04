@@ -1,0 +1,121 @@
+body{
+    background: rgb(255,0,127);
+    background: radial-gradient(circle, rgba(255,0,127,0.9290091036414566) 0%, rgba(88,0,0,1) 100%);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+#overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgb(64, 0, 0,0.8);
+}
+h1{
+    font-family: 'Baskervville', serif;
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 10px;
+    /* position: fixed; */
+    top: 0;
+
+}
+input{
+    width: 150px;
+    height: 20px;
+}
+#writepoem{
+    height: 35px;
+    margin-right: 100px;
+}
+select{
+    width: 158px;
+}
+
+
+#container{
+    background-color: #FFEBEB;
+    border-radius: 30px;
+    width: 550px;
+    height: 400px;
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+form{
+    padding: 60px;
+    padding-right: 80px;
+
+}
+.input{
+    color: #CC0066;
+    padding: 15px;
+}
+#input1{
+    padding-top: 0;
+}
+.input label{
+    padding-right: 25px;
+}
+#newpoem{
+    /* padding-top: 15px; */
+    height: 35px;
+
+}
+
+#poemcontainer{
+
+    padding: 20px;
+    text-align: center;
+    font-family: 'Baskervville', serif;
+    color: #e60000;
+    background-color: #FFD6D6;
+    font-size: 20px;
+    width: 510px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+
+}
+#poemcontainer input{
+    width: 200px;
+}
+
+div{
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    font-size: 15px;
+}
+
+footer p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

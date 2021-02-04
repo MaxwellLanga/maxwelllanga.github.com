@@ -6,6 +6,8 @@
     <title>Mad Libs</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Open+Sans&display=swap" rel="stylesheet">
     <script src="script.js" defer></script> 
 
 </head>
@@ -14,59 +16,62 @@
         <h1>LOVE OF MY LIFE</h1>
     </header>
 
-    <main id="container">
+    <main>
 
-        <section>
-            <form>
-                <div>
+        <section id="container">
+            <form id="myform">
+                <div class="input" id="input1">
                     <label for="loveName">Their Name:</label>
-                    <input type="text" name="loveName" id="loveName" required>
+                    <input type="text" name="loveName" id="loveName" class="info" required>
                 </div>
-                <div>
+                <div class="input">
                     <label for="bodyPart">A Body Part:</label>
-                    <input type="text" name="bodyPart" id="bodyPart" required>
+                    <input type="text" name="bodyPart" id="bodyPart" class="info" required>
                 </div>
-                <div>
+                <div class="input">
                     <label for="verb">Action Verb (past tense):</label>
-                    <input type="text" name="verb" id="verb" required>
+                    <input type="text" name="verb" id="verb" class="info" required>
                 </div>
-                <div>
+                <div class="input">
                     <label for="family">Pick a family member:</label>
-                    <select required>
+                    <select name="family" id="family" class="info" required>
                         <option value=""></option>
-                        <option value="nana">Nana</option>
-                        <option value="brother">Brother</option>
-                        <option value="mother">Mother</option>
-                        <option value="uncle">Uncle</option>
-                        <option value="aunt">Aunt</option>
-                        <option value="father">Father</option>
-                        <option value="inlaw">Inlaw</option>
-                        <option value="sister">Sister</option>
+                        <option value="Nana">Nana</option>
+                        <option value="Brother">Brother</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Uncle">Uncle</option>
+                        <option value="Aunt">Aunt</option>
+                        <option value="Father">Father</option>
+                        <option value="Inlaw">Inlaw</option>
+                        <option value="Sister">Sister</option>
                     </select>
                 </div>
-                <div>
+                <div class="input">
                     <label for="userName">Your Name:</label>
-                    <input type="text" name="userName" id="userName" required>
+                    <input type="text" name="userName" id="userName" class="info" required>
                 </div>
     
                 <div>
-                    <input type="submit" value="Write Poem">
+                    <input type="submit" value="Write My Poem" id="writepoem">
                 </div>
     
             </form>
         </section>
 
-        <section id="poem" class="hide">
-            <p id="poemlines"></p>
-            <input type="submit" value="New Poem">
+        <section id="overlay" >
+            <div id="poemcontainer">
+                <p id="poemlines"></p>
+                <input type="submit" value="Write a New Poem" id="newpoem">
+            </div>
         </section>
     </main>
 
     <footer>
         <p>Send me an <a href="mailto:&#111;&#109;&#108;&#097;&#110;&#103;&#097;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;" id="email">Email</a></p>
-        <a href="http://validator.w3.org/check?uri=referer" id="html">Valid HTML</a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        <p><a href="http://validator.w3.org/check?uri=referer" id="html">Valid HTML</a></p>
+        <p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
     </footer>
     
+
 </body>
 </html>
