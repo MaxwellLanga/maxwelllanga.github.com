@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Picture</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Maxwell's Road-Trips</h1>
+    </header>
+
+    
+    <div id="images">
+        <div id="capehorn">
+            <img src="images/capehorn.png" alt="Cutout of Maxwell in Cape Horn" width="313.8" height="469.2">
+        </div>
+        <div id="capital">
+            <img src="images/capital.png" alt="Cutout of Maxwell at US Capital" width="359.1" height="564.66">
+        </div>
+        <div id="joshua">
+            <img src="images/joshuatree.png" alt="Cutout of Maxwell in Joshua Tree" width="754.8" height="452.4">
+        </div>
+        <div id="pitts" >
+            <img src="images/pittsburgh.png" alt="Cutout of Maxwell in Pittburgh" width="420.9" height="497.7">
+        </div>
+        <div id="snow" >
+            <img src="images/snowboarding.png" alt="Cutout of Maxwell Snowboarding" width="466.5" height="506.25">
+        </div>
+    </div>
+
+    <section id="snowoverlay">
+        <h2>Trip to Tahoe</h2>
+        <p>I love snowboarding and since I moved in Davis, I made it a yearly traditoin to go snowboarding as often as I can.</p>
+        <input type="submit" value="Checkout my Other Trips" id="newpoem">
+    </section>
+  
+
+    <footer>
+        <p>Send me an <a href="mailto:&#111;&#109;&#108;&#097;&#110;&#103;&#097;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;" id="email">Email</a></p>
+        <p><a href="http://validator.w3.org/check?uri=referer" id="html">Valid HTML</a></p>
+        <p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>        
+    </footer>
+
+    <script>
+        // var snowbtn = document.getElementById('snow')
+
+        // snowbtn.addEventListener('click', function(){
+        //     document.getElementById('snowoverlay').style.display = 'block';
+        //     console.log("yes")
+        // });
+
+        var snow = document.getElementById('snow');
+        snow.addEventListener('mouseover', function(){
+            snow.className = "animate";
+        });
+
+
+
+
+    </script>
+</body>
+</html>
