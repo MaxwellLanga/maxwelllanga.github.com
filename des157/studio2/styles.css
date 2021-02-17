@@ -37,7 +37,7 @@
     bottom: 50px;
     z-index: 2;
     left: 0;
-    transform: rotate(-10deg);
+    /* transform: rotate(-10deg); */
 
 }
 footer{
@@ -55,32 +55,20 @@ footer{
     }
 }
 
-#capehorn:hover{
+/* .animate{
     animation-name: enlarge;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+} */
+
+.cutouts:hover{
+    animation-name: enlarge;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+    /* border: 5px solid #555; */
+
 }
 
-#snow:hover{
-    animation-name: enlarge;
-    animation-duration: 2s;
-    transform: rotate(-10deg);
-
-}
-
-#capital:hover{
-    animation-name: enlarge;
-    animation-duration: 2s;
-}
-
-#joshua:hover{
-    animation-name: enlarge;
-    animation-duration: 2s;
-}
-#pitts:hover{
-    animation-name: enlarge;
-    animation-duration: 2s;
-}
 #snowoverlay{
     background-color: #268BCF;
     position: fixed;

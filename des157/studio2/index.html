@@ -14,20 +14,20 @@
 
     
     <div id="images">
-        <div id="capehorn">
+        <div id="capehorn" class="cutouts">
             <img src="images/capehorn.png" alt="Cutout of Maxwell in Cape Horn" width="313.8" height="469.2">
         </div>
-        <div id="capital">
+        <div id="capital" class="cutouts">
             <img src="images/capital.png" alt="Cutout of Maxwell at US Capital" width="359.1" height="564.66">
         </div>
-        <div id="joshua">
+        <div id="joshua" class="cutouts">
             <img src="images/joshuatree.png" alt="Cutout of Maxwell in Joshua Tree" width="754.8" height="452.4">
         </div>
-        <div id="pitts" >
+        <div id="pitts" class="cutouts">
             <img src="images/pittsburgh.png" alt="Cutout of Maxwell in Pittburgh" width="420.9" height="497.7">
         </div>
-        <div id="snow" >
-            <img src="images/snowboarding.png" alt="Cutout of Maxwell Snowboarding" width="466.5" height="506.25">
+        <div id="snow" class="cutouts">
+            <img src="images/snowboarding.png" alt="Cutouts of Maxwell Snowboarding" width="466.5" height="506.25">
         </div>
     </div>
 
@@ -52,10 +52,38 @@
         //     console.log("yes")
         // });
 
-        var snow = document.getElementById('snow');
-        snow.addEventListener('mouseover', function(){
-            snow.className = "animate";
+        // var snow = document.getElementById('snow');
+        // snow.addEventListener('mouseover', function(){
+        //     snow.className = "animate";
+        // });
+
+        let myImgs = document.querySelectorAll('.cutout')
+
+        myImgs.addEventListener('mouseover', function(){
+            myImgs.style.border = '5px solid#D62828';
+
         });
+        
+        // myImgs.addEventListener('mouseover', mouseOver)
+
+        // function mouseOver(){
+        //     document.getElementsByClassName('cutout').style.border = '5px solid#D62828';
+        // }
+        // let imgOver = document.querySelectorAll('.cutouts');
+
+        // imgOver.addEventListener('mouseover', function(){
+
+        //     const colors = ['#D62828', 'FCBF49','#ff9e00','#9d4edd','#e9ff70']
+
+
+        //     let random_color = colors[Math.floor(Math.random()*colors.length)];
+        //     document.getElementById('cutouts').style.border = `5px solid ${random_color}`
+
+        // });
+
+
+        
+        
 
 
 
