@@ -16,6 +16,27 @@ header{
     background-color: #002940;
     padding: 20px;
 }
+footer{
+    font-family: 'Roboto', sans-serif;
+    color: #ABE2FF;
+    margin: auto;
+    width: 100vw;
+    text-align: center;
+    background-color: #002940;
+    padding: 35px;
+    /* display: flex; */
+}
+footer p {
+    display: inline;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    color: #268BCF;
+}
+a:hover{
+    color: #ABE2FF;
+}
 body{
     background-color: #ABE2FF;
 
@@ -24,7 +45,7 @@ body{
     position: absolute;
     bottom: 100px;
     /* bottom: 120px; */
-    right: 5%;
+    right: 9%;
     /* top: 37%; */
 
 }
@@ -32,7 +53,7 @@ body{
     position: absolute;
     /* bottom: 100px; */
     z-index: 1;
-    right: 25%;
+    right: 30%;
     top: 20%;
     /* transform: rotate(-20deg); */
 
@@ -41,7 +62,7 @@ body{
     position: absolute;
     bottom: 100px;
     z-index: 4;
-    left: 5%;
+    left: 9%;
 
 }
 #pitts{
@@ -60,11 +81,10 @@ body{
     /* transform: rotate(-10deg); */
 
 }
-footer{
-    display: flex;
+/* footer{
     position: fixed;
     bottom: 0;
-}
+} */
 @keyframes enlarge{
     from{
         transform: scale(1,1) ;
