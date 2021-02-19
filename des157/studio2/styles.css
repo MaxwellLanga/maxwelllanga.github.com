@@ -8,6 +8,7 @@
 
 header{
     font-family: 'Monoton', cursive;
+    letter-spacing: 5px;
     font-size: 30px;
     color: #ABE2FF;
     margin: auto;
@@ -24,6 +25,7 @@ footer{
     text-align: center;
     background-color: #002940;
     padding: 35px;
+    font-size: 12px;
     /* display: flex; */
 }
 footer p {
