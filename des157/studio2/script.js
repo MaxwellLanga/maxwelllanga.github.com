@@ -53,7 +53,9 @@
         //     });
         // });
 
+        
 
+        //adds the colored boundary to the images when hover.
 
         let imgOver = document.querySelectorAll('.cutouts');
         imgOver.forEach(function(eachImg){

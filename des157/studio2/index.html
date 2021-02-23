@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Every Picture</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script> 
+    
+    <!-- <script src="script.js" defer></script>  -->
 
 </head>
 <body>
     <header>
         <h1>Maxwell's Road-Trips</h1>
+        <i class="fas fa-map-marker-alt" style="font-size:50px;"></i>
+        <i class="fas fa-clock" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i>
+
+        <p> - Tahoe</p>
     </header>
 
     
     <div id="images">
+        <i class="fas fa-clock" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i>
+
         <div id="capehorn" class="cutouts">
             <img src="images/capehorn.png" alt="Cutout of Maxwell in Cape Horn" width="200" height="299">
         </div>
@@ -48,7 +58,7 @@
         <p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>        
     </footer>
 
-    <!-- <script>
+    <script>
         // var snowbtn = document.getElementById('snow')
 
         // snowbtn.addEventListener('click', function(){
@@ -102,8 +112,10 @@
         //     });
         // });
 
+        
 
 
+        
         let imgOver = document.querySelectorAll('.cutouts');
         imgOver.forEach(function(eachImg){
 
@@ -138,6 +150,6 @@
 
 
 
-    </script> -->
+    </script>
 </body>
 </html>

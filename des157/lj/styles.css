@@ -20,8 +20,22 @@ body{
     background: linear-gradient(135deg, rgba(0,10,41,1) 9%, rgba(136,28,84,1) 38%, rgba(196,52,64,1) 70%, rgba(255,120,0,1) 97%);   
     font-family: 'Open Sans', sans-serif; 
     margin: auto;
-    height: 3640px;
+    height: 5850px;
 } 
+img{
+    align-items: center;
+}
+figure{
+    margin: 0;
+    padding-top: 30px;
+}
+figcaption{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 13px;
+    font-style: italic;
+    color: #c5d4ff;
+    padding-top: 10px;
+}
 article{
     padding-bottom: 80px;
 }

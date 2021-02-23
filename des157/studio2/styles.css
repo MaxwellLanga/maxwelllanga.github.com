@@ -17,6 +17,7 @@ header{
     background-color: #002940;
     padding: 20px;
 }
+
 footer{
     font-family: 'Roboto', sans-serif;
     color: #ABE2FF;
@@ -28,7 +29,7 @@ footer{
     font-size: 12px;
     /* display: flex; */
 }
-footer p {
+footer p{
     display: inline;
     padding: 15px;
 }
