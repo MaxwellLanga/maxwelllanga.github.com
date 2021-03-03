@@ -1,0 +1,73 @@
+body {
+    font-family: Arial;
+    background-color: #0A0A0A;
+    margin: auto;
+    width: 1000px;
+    color: #F5F5F5;
+    padding: 50px;
+    line-height: 1.5em;
+}
+
+button { 
+    padding: 10px;
+}
+
+div {
+    padding: 20px;
+    
+}
+h1{
+    text-align: center;
+    font-size: 4em;
+    color: #ef233c;
+}
+h2{
+    color: #ef233c;
+
+}
+
+section{
+    /* background-color: aqua; */
+    padding: 20px;
+    display: flex;
+    height: 700px;
+}
+aside{
+    /* background-color: blueviolet; */
+    /* padding: 20px; */
+    margin: 20px;
+    flex: 1;
+}
+#rightside{
+    margin: 20px;
+    padding: 0;
+    /* background-color: chartreuse; */
+    flex: 2;
+    position: relative;
+ 
+}
+#rightside div{
+    margin-top: 10px;
+}
+#tally{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 547px;
+}
+
+#gamecontrol, #tally {
+    background-color: #ffffff;
+    color: #0A0A0A;
+    text-align: center;
+}
+
+#game {
+    background-color:#ffffff;
+    color: #0A0A0A;
+}
+#actions {
+    background-color: #ffffff;
+    color: #0A0A0A;
+
+}
