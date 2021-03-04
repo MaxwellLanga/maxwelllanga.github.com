@@ -20,8 +20,8 @@ body{
     background: linear-gradient(135deg, rgba(0,10,41,1) 9%, rgba(136,28,84,1) 38%, rgba(196,52,64,1) 70%, rgba(255,120,0,1) 97%);   
     font-family: 'Open Sans', sans-serif; 
     margin: auto;
-    height: 5850px;
-} 
+    height: 6850px;
+}
 img{
     align-items: center;
 }
