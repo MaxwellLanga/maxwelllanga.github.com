@@ -1,0 +1,38 @@
+body{
+    background: rgb(0,10,41);
+    background: linear-gradient(135deg, rgba(0,10,41,1) 9%, rgba(136,28,84,1) 38%, rgba(196,52,64,1) 70%, rgba(255,120,0,1) 97%);   
+    font-family: 'Open Sans', sans-serif; 
+    margin: auto;
+    height: 2900px;
+    width: 600px;
+}
+h1 , h2 {
+    font-family: 'Roboto', sans-serif;
+    color:  #c5d4ff;
+}
+h1{
+    font-size: 4em;
+    font-weight: lighter;
+}
+p{
+    font-size: 17px;
+    color: #edf7fd;
+    line-height: 1.6;
+}
+article{
+    padding-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: #aac1ff;
+
+}
+a:hover{
+    color:  #7499fd;
+
+}
+footer{
+    color: #edf7fd;
+    padding-top: 100px;
+
+}
