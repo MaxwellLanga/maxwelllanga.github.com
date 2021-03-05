@@ -30,7 +30,7 @@ section{
     /* background-color: aqua; */
     padding: 20px;
     display: flex;
-    height: 700px;
+    height: 740px;
 }
 aside{
     /* background-color: blueviolet; */
@@ -57,17 +57,20 @@ aside{
 }
 
 #gamecontrol, #tally {
+
     background-color: #ffffff;
     color: #0A0A0A;
     text-align: center;
 }
 
 #game {
+    height: 200px;
     background-color:#ffffff;
     color: #0A0A0A;
 }
 #actions {
-    background-color: #ffffff;
+    height: 90px;
+    background-color: #994c4c;
     color: #0A0A0A;
 
 }

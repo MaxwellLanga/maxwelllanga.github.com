@@ -1,7 +1,5 @@
 console.log("JS Loading");
 (function(){
-    // const p1sound = new Audio('sounds/player1.m4a')
-    // const p2sound = new Audio('sounds/player2.m4a')
     var sound;
     const snake = new Audio('sounds/snake.m4a')
     var startGame = document.getElementById('startgame');
