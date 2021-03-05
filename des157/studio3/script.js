@@ -1,20 +1,25 @@
 console.log("JS Loading");
 (function(){
+    // const p1sound = new Audio('sounds/player1.m4a')
+    // const p2sound = new Audio('sounds/player2.m4a')
+    var sound;
+    const snake = new Audio('sounds/snake.m4a')
     var startGame = document.getElementById('startgame');
 	var gameControl = document.getElementById('gamecontrol');
 	var game = document.getElementById('game');
 	var score = document.getElementById('score');
 	var actionArea = document.getElementById('actions');
     var gameData = {
-        dice: ['dice1.png', 'dice2.png', 'dice3.png', 
-            'dice4.png', 'dice5.png', 'dice6.png'],
+        dice: ['images/dice1.png', 'images/dice2.png', 'images/dice3.png', 
+            'images/dice4.png', 'images/dice5.png', 'images/dice6.png'],
         players: ['Player 1', 'Player 2'],
         score: [0, 0],
         roll1: 0,
         roll2: 0,
         rollSum: 0,
         index: 0,
-        gameEnd: 29
+        gameEnd: 29,
+        psounds: ['sounds/player1.m4a','sounds/player2.m4a']
     };
 
     startGame.addEventListener('click', function(){
@@ -33,6 +38,8 @@ console.log("JS Loading");
 
     function setUpTurn(){
         game.innerHTML = `<p>${gameData.players[gameData.index]}</p>`;
+        sound = new Audio(gameData.psounds[gameData.index]);
+        sound.play();
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
         document.getElementById('roll').addEventListener('click', function(){
             throwDice();
@@ -51,6 +58,7 @@ console.log("JS Loading");
 
         //Handling if snake eyes is rolled, a one is rolled or none of the two
         if(gameData.rollSum ==2){
+            snake.play();
             game.innerHTML += '<p>Oh snap! Snake eyes!</p>'
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index =0) : (gameData.index = 1) //a simpler if statement to swap the player
