@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background-color: #0A0A0A;
+    background-color: #303030;
     margin: auto;
     width: 1000px;
     color: #F5F5F5;
@@ -70,7 +70,23 @@ aside{
 }
 #actions {
     height: 90px;
-    background-color: #994c4c;
+    background-color: #ffffff;
     color: #0A0A0A;
 
+}
+footer{
+    font-family: Arial;
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: #cf2626;
+    padding: 50px;
+}
+a:hover{
+    color: #ABE2FF;
 }
