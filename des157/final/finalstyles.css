@@ -1,25 +1,28 @@
 html{
     background-color: #001021;
-    color: #ffffff;
+    color: #0097E3;
 
 }
-body{
+#wrapper{
     position: relative;
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
     max-width: 1366px;
+    font-family: 'Lato', sans-serif;
+
     /* background-color: aquamarine; */
 }
 nav{
     display: flex;
     justify-content: space-between;
 }
-h1{
-    font-size: 3em;
-    color: #e01a4f;
+h1 , h2{
+    font-size: 4em;
+    color: #EA4873;
     margin-top: 50px;
-
+    font-family: 'Barlow', sans-serif;
+    font-weight: lighter;    
 }
 ul{
     list-style: none;
@@ -30,11 +33,14 @@ a{
     text-decoration: none;
     color: #ffffff ;
 }
+a:hover{
+    color: #0097E3;
+}
 li{
     padding: 10px;
 }
 #description {
-    line-height: 1.6;
+    line-height: 1.3;
     font-size: 1.5em;
 }
 #location{
@@ -43,4 +49,44 @@ li{
     bottom: 50px;
     color: #e01a4f;
     font-size: 2em;
+}
+
+#map   {
+    position: relative;
+    /* width: 1000px;
+    height: auto; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#pittsstar{
+    position: absolute;
+    right: 28%;
+    top: 48%;
+}
+#overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/pittsburgh.jpg);
+    backdrop-filter: blur(20px);
+}
+#overlay h2, #overlay ul{
+    margin-left: 50px ;
+}
+#overlay ul{
+    margin-right: 50px;
+}
+#details{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3;
+    font-size: 1.5em;
+    margin-left: 50px;
+    width: 550px;
 }
