@@ -44,12 +44,11 @@
 
 
         switch(thisstar){
-            case 'pittstar': locname.innerHTML = stars[0][0]; story.innerHTML = stories[0]; locname.style.color = stars[0][1]; title.style.color = stars[0][1]; pic.src = 'images/pittsburgh.jpg'; break;
-            case 'tahoestar': locname.innerHTML = stars[1][0]; story.innerHTML = stories[1]; locname.style.color = stars[1][1]; title.style.color = stars[1][1]; pic.src = 'images/snowboard.jpg'; break;
-            case 'capstar': locname.innerHTML = stars[2][0]; story.innerHTML = stories[2];locname.style.color = stars[2][1]; title.style.color = stars[2][1]; pic.src = 'images/capital.jpg'; break;
-            case 'hornstar': locname.innerHTML = stars[3][0]; story.innerHTML = stories[3];locname.style.color = stars[3][1]; title.style.color = stars[3][1]; pic.src = 'images/capehorn.jpg'; break;
-            case 'joshstar': locname.innerHTML = stars[4][0]; story.innerHTML = stories[4];locname.style.color = stars[4][1]; title.style.color = stars[4][1]; pic.src = 'images/joshuatree.jpg'; break;
-
+            case 'pittstar': locname.innerHTML = stars[0][0]; story.innerHTML = stories[0]; locname.style.color = stars[0][1]; title.style.color = stars[0][1]; pic.src = 'images/pittsburgh.jpg'; pic.style.border = '5px solid #FF3300'; break;
+            case 'tahoestar': locname.innerHTML = stars[1][0]; story.innerHTML = stories[1]; locname.style.color = stars[1][1]; title.style.color = stars[1][1]; pic.src = 'images/snowboard.jpg'; pic.style.border = '5px solid #FB9DB3'; break;
+            case 'capstar': locname.innerHTML = stars[2][0]; story.innerHTML = stories[2];locname.style.color = stars[2][1]; title.style.color = stars[2][1]; pic.src = 'images/capital.jpg'; pic.style.border = '5px solid #00f5af'; break;
+            case 'hornstar': locname.innerHTML = stars[3][0]; story.innerHTML = stories[3];locname.style.color = stars[3][1]; title.style.color = stars[3][1]; pic.src = 'images/capehorn.jpg'; pic.style.border = '5px solid #01FF00'; break;
+            case 'joshstar': locname.innerHTML = stars[4][0]; story.innerHTML = stories[4];locname.style.color = stars[4][1]; title.style.color = stars[4][1]; pic.src = 'images/joshuatree.jpg'; pic.style.border = '5px solid #dc0469'; break;
 
         }
 
@@ -60,6 +59,8 @@
         document.getElementById('location').style.color = "#ffffff";
         document.getElementById('title').style.color = "#ffffff";
         pic.src = '';
+        pic.style.border = ''
+        
     }
 
 })();
