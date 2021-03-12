@@ -11,7 +11,16 @@ html{
     max-width: 1366px;
     font-family: 'Lato', sans-serif;
 
-    /* background-color: aquamarine; */
+}
+
+#test{
+    width: 600px;
+    margin: auto;
+}
+#test p{
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Lato', sans-serif;
 }
 nav{
     display: flex;
