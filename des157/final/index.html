@@ -8,6 +8,7 @@
     <link href="finalstyles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Lato&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> 
 </head>
 <body>
     
@@ -24,121 +25,22 @@
         </header>
     
         <div>
+            <img  width="350px" id="imagelocation">
             <p id="description">Join me on my<br>journey around<br>the United States</p>
             <p id="location">The stars are you guide.</p>
-            <!-- <p id="details">Randyland is a landmark building owned by Randy Gilson. It is filled with vividly colored mural and objects. I visited it on my trip on my trip to Pittsburgh and it it very amazing. All the colors pop and come to life when you see them in person. I recommend visiting it if you are in the area. </p> -->
-
     
         </div>
     
         <div id="map">
-            <img src="images/map.png" width="1000px" height="auto">
-            <img src="images/pittstar.png" id="pittstar"  width="20">
-            <img src="images/tahoestar.png" id="tahoestar"  width="20">
-            <img src="images/capstar.png" id="capstar"  width="20">
-            <img src="images/hornstar.png" id="hornstar"  width="20">
-            <img src="images/jostar.png" id="joshstar"  width="20">
+            <img src="images/map.png" width="1000px" height="auto" >
+            <img src="images/pittstar.png" id="pittstar"  width="20" class="pins">
+            <img src="images/tahoestar.png" id="tahoestar"  width="20" class="pins">
+            <img src="images/capstar.png" id="capstar"  width="20" class="pins">
+            <img src="images/hornstar.png" id="hornstar"  width="20" class="pins">
+            <img src="images/jostar.png" id="joshstar"  width="20" class="pins">
         </div>
     
     </div>
- 
-    <div id="overlay" >
-        <nav>
-            <h2>Pittsburgh, CA<br>Randyland</h2>
-            <ul>
-                <li><a href="http://validator.w3.org/check?uri=referer" id="html">Valid HTML</a></li>
-                <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
-                <li><a href="mailto:&#111;&#109;&#108;&#097;&#110;&#103;&#097;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;" id="email">Email</a></li>
-            </ul>
-        </nav>
-        <p id="details">Randyland is a landmark building owned by Randy Gilson. It is filled with vividly colored mural and objects. I visited it on my trip on my trip to Pittsburgh and it it very amazing. All the colors pop and come to life when you see them in person. I recommend visiting it if you are in the area. </p>
-
-        
-    </div>
-
-
-
-
-    <script>
-        const pittsover = document.getElementById('pittstar');
-        const capover = document.getElementById('capstar');
-        const hornover = document.getElementById('hornstar');
-        const tahoeover = document.getElementById('tahoestar');
-        const joshover = document.getElementById('joshstar');
-        // let colors = ['#00f5af', '#ff3300', '#fdbd0d', '#5aa9e6', '#190b28'];
-        const stars = [
-            ['Pittsburgh, PA', '#FF3300'],
-            ['Tahoe, CA', '#FB9DB3'],
-            ['Washington DC','#00f5af'],
-            ['Capehorn, CA','#01FF00'],
-            ['Joshua Tree, CA','#dc0469']
-        ];
-        const stories = [
-            'Randyland is a landmark building owned by Randy Gilson. It is filled with vividly colored mural and objects. I visited it on my trip on my trip to Pittsburgh and it it very amazing. All the colors pop and come to life when you see them in person. I recommend visiting it if you are in the area.',
-            ''
-        ]
-
-
-        pittsover.addEventListener("mouseover",mouseOver)
-        pittsover.addEventListener("mouseout", mouseOut)
-        capover.addEventListener("mouseover",mouseOver)
-        capover.addEventListener("mouseout", mouseOut)
-        hornover.addEventListener("mouseover",mouseOver)
-        hornover.addEventListener("mouseout", mouseOut)
-        tahoeover.addEventListener("mouseover",mouseOver)
-        tahoeover.addEventListener("mouseout", mouseOut)
-        joshover.addEventListener("mouseover",mouseOver)
-        joshover.addEventListener("mouseout", mouseOut)
-
-        const locname = document.getElementById('location');
-        const title = document.getElementById('title');
-        const story = document.getElementById('description');
-
-
-        function mouseOver (event){
-
-            const thisstar = event.target.id;
-
-
-            switch(thisstar){
-                case 'pittstar': locname.innerHTML = stars[0][0]; story.innerHTML = stories[0]; locname.style.color = stars[0][1]; title.style.color = stars[0][1]; break;
-                case 'tahoestar': locname.innerHTML = stars[1][0]; locname.style.color = stars[1][1]; title.style.color = stars[1][1]; break;
-                case 'capstar': locname.innerHTML = stars[2][0]; locname.style.color = stars[2][1]; title.style.color = stars[2][1]; break;
-                case 'hornstar': locname.innerHTML = stars[3][0]; locname.style.color = stars[3][1]; title.style.color = stars[3][1]; break;
-                case 'joshstar': locname.innerHTML = stars[4][0]; locname.style.color = stars[4][1]; title.style.color = stars[4][1]; break;
-
-
-            }
-
-
-            // document.getElementById('location').innerHTML = "Pittsburgh, PA";
-            // document.getElementById('location').style.color = "#FF3300";
-            // document.getElementById('title').style.color = "#FF3300";
-        }
-        function mouseOut (){
-            document.getElementById('location').innerHTML = "The stars are you guide.";
-            document.getElementById('description').innerHTML = "Join me on my<br>journey around<br>the United States ";
-            document.getElementById('location').style.color = "#0097E3";
-            document.getElementById('title').style.color = "#0097E3";
-        }
-
-
-
-
-
-
-        // //Turn on and off the overlay
-        // function on(){
-        //     document.getElementById("overlay").style.display = "block"
-        // }
-        // function off(){
-        //     document.getElementById("overlay").style.display = "none"
-        // }
-
-       
-        console.log(pittsover)
-    </script>
-
 
 </body>
 </html>
